@@ -242,14 +242,14 @@ export default function Home() {
 
             <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
-                I&apos;m a solo developer building apps with AI tools and shipping them
+                I&apos;m a solo iOS developer building AI-powered apps and shipping them
                 for real. No team. No funding. Just ideas, code, and a
                 determination to get things out the door.
               </p>
               <p>
-                Every app I build gets documented publicly — the wins, the
-                fails, the weird bugs at 2am. If you&apos;re into watching how
-                apps actually get made (or want to build your own), follow
+                Building in public — every app gets documented as it happens. The wins, the
+                fails, the weird bugs at 2am. If you&apos;re into watching how indie apps
+                actually get made (or want to build your own), follow
                 along.
               </p>
             </div>
