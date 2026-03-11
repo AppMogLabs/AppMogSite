@@ -20,11 +20,10 @@ const products = {
       'Contract functions explained in plain English',
       'Ownership & permissions analysis',
       'Tokenomics breakdown',
-      'Risk assessment scoring (0-100)',
       'Multi-EVM support (Ethereum, Base, Arbitrum, Polygon)',
       'Export reports (PDF, Markdown)',
     ],
-    cta: 'https://contractscan.appmog.studio',
+    cta: 'https://contractscan.dev',
   },
   walletintel: {
     name: 'WalletIntel',

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="borderGrad" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#39ff14" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#00e5ff" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ff2d7b" stop-opacity="0.6"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="textGlow">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="96" fill="#0a0a0f"/>
+  <rect x="2" y="2" width="508" height="508" rx="95" fill="none" stroke="url(#borderGrad)" stroke-width="2"/>
+  
+  <!-- Title bar -->
+  <rect x="20" y="20" width="472" height="90" rx="48" fill="#39ff1408"/>
+  <rect x="20" y="20" width="472" height="90" rx="48" fill="none" stroke="#39ff1418" stroke-width="1"/>
+  
+  <!-- Window dots -->
+  <circle cx="72" cy="65" r="14" fill="#ff2d7b" opacity="0.85"/>
+  <circle cx="112" cy="65" r="14" fill="#39ff14" opacity="0.6"/>
+  <circle cx="152" cy="65" r="14" fill="#00e5ff" opacity="0.6"/>
+  
+  <!-- Terminal prompt line 1 -->
+  <text x="64" y="200" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="56" fill="#39ff14" font-weight="700" filter="url(#textGlow)">
+    &gt; app
+  </text>
+  
+  <!-- Terminal prompt line 2 -->
+  <text x="64" y="276" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="56" fill="#39ff14" font-weight="700" filter="url(#textGlow)">
+    &gt; mog
+  </text>
+  
+  <!-- Cursor blink -->
+  <rect x="64" y="310" width="28" height="48" rx="2" fill="#39ff14" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.15;0.8" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Status line -->
+  <text x="110" y="346" font-family="'JetBrains Mono', 'Fira Code', 'Courier New', monospace" font-size="28" fill="#00e5ff" opacity="0.4">
+    shipping...
+  </text>
+  
+  <!-- Bottom accent bar -->
+  <rect x="64" y="420" width="120" height="3" rx="1.5" fill="#39ff14" opacity="0.3"/>
+  <rect x="200" y="420" width="80" height="3" rx="1.5" fill="#ff2d7b" opacity="0.2"/>
+  <rect x="296" y="420" width="60" height="3" rx="1.5" fill="#00e5ff" opacity="0.2"/>
+  
+  <!-- Corner accents -->
+  <circle cx="440" cy="440" r="6" fill="#39ff14" opacity="0.15"/>
+  <circle cx="460" cy="440" r="4" fill="#ff2d7b" opacity="0.1"/>
+</svg>
