@@ -93,7 +93,6 @@ Built for iPhone. Leverages on-device machine learning (Core ML) for instant ana
 
 ## Pair With Other Tools
 
-- [SoundSmart](/products/soundsmart) - Free up space for more voice memos after you clear photos
 
 **[Play Now - Free Download](https://apps.apple.com/app/photoblitz)**
 

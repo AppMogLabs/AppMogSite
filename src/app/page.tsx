@@ -27,14 +27,6 @@ export default function Home() {
       gradient: 'linear-gradient(to bottom right, rgba(76,29,149,0.8), rgba(46,16,100,0.4), #000)',
     },
     {
-      name: 'SoundSmart',
-      slug: 'soundsmart',
-      status: 'LIVE' as const,
-      description: 'Voice memos to structured notes. AI transcription + summaries.',
-      category: 'Productivity',
-      gradient: 'linear-gradient(to bottom right, rgba(120,53,15,0.8), rgba(69,26,3,0.4), #000)',
-    },
-    {
       name: 'VestingWatch',
       slug: 'vestingwatch',
       status: 'LIVE' as const,

@@ -49,7 +49,7 @@ export default function About() {
             { label: 'Orchestration', color: 'bg-emerald-900/20', text: 'Argos scopes tasks, assigns to specialists, unblocks issues. Budget allocation, priority conflicts, Definition of Done validation.' },
             { label: 'Execution', color: 'bg-blue-900/20', text: 'Agents spawn sub-agents for parallelism. Codie writes code (TDD). Claude Code handles complex architecture. Codex handles volume.' },
             { label: 'Verification', color: 'bg-amber-900/20', text: 'No agent claims "done" without running verification commands. Evidence before assertions. Always.' },
-            { label: 'Delivery', color: 'bg-purple-900/20', text: 'Seven products shipped. ContractScan, WalletIntel, VestingWatch, SoundSmart, SpeakSmart, PhotoBlitz, AgentWatch.' },
+            { label: 'Delivery', color: 'bg-purple-900/20', text: 'Six products shipped. ContractScan, WalletIntel, VestingWatch, SpeakSmart, PhotoBlitz, AgentWatch.' },
           ].map((item, i) => (
             <div key={item.label} className={`relative p-6 lg:p-10 border-t border-border ${i % 2 === 0 ? 'md:border-r' : ''}`}>
               <div className={`absolute inset-0 ${item.color}`} />

@@ -22,13 +22,7 @@ Whale watching 101: set alerts, analyze token flows, predict accumulation. Case 
 [Read now →](/blog/walletintel-whale-tracking)  
 *Featured image: Whale silhouette in Matrix rain code*
 
-### 3. AI Voice Memos That Actually Think: SoundSmart Deep Dive
-**4 min read**  
-From raw audio to summarized action items in seconds. Why transcription alone isn't enough—and how AI structuring saves hours.  
-[Read now →](/blog/soundsmart-voice-ai)  
-*Featured image: Waveform morphing into bullet points*
-
-### 4. Never Get Dumped On Again: Token Vesting with VestingWatch
+### 3. Never Get Dumped On Again: Token Vesting with VestingWatch
 **6 min read**  
 Cliffs, linear unlocks, VC dump cycles. Track vesting schedules for 1000+ Ethereum tokens. Exit before the flood or buy the dip—your call.  
 [Read now →](/blog/vestingwatch-guide)  
@@ -53,7 +47,6 @@ Space Invaders meets camera roll cleanup. Blast duplicates, screenshots, and blu
 - [Vesting Dumps: Historical Data Analysis](/blog/vesting-dump-data)
 
 ### Productivity Tools
-- [Voice-First Workflows: SoundSmart + SpeakSmart](/blog/voice-first-productivity)
 - [Why Gamification Works: PhotoBlitz UX Breakdown](/blog/gamification-design)
 
 ## Signal, Not Noise

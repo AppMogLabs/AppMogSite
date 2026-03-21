@@ -33,10 +33,7 @@ Monitor vesting schedules for Ethereum tokens. Get alerted before cliffs dump pr
 
 ### Productivity & AI Tools
 
-**[SoundSmart](/products/soundsmart)** - AI voice memos  
-Record thoughts at brain speed. Get transcriptions, summaries, action items. Your ideas, structured automatically.
-
-**[SpeakSmart](/products/speaksmart)** - Voice to action AI  
+**[SpeakSmart](/products/speaksmart)** - Voice to action AI
 Speak commands, execute tasks. Hands-free productivity without breaking flow state.
 
 **[PhotoBlitz](/products/photoblitz)** - Gamified iPhone cleanup  

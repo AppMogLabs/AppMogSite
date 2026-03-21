@@ -16,7 +16,6 @@ describe('Home Page', () => {
     render(<Home />);
     expect(screen.getByText('ContractScan')).toBeInTheDocument();
     expect(screen.getByText('WalletIntel')).toBeInTheDocument();
-    expect(screen.getByText('SoundSmart')).toBeInTheDocument();
     expect(screen.getByText('VestingWatch')).toBeInTheDocument();
     expect(screen.getByText('Photo Blitz: Cleanup')).toBeInTheDocument();
     expect(screen.getByText('AgentWatch')).toBeInTheDocument();

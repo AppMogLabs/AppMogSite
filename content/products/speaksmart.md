@@ -96,7 +96,6 @@ Set timers, add grocery lists, play music—productive even when hands are occup
 
 ## Pair With Other Tools
 
-- [SoundSmart](/products/soundsmart) - Record long-form thoughts (SoundSmart) then execute tasks (SpeakSmart)
 
 ## Platform Support
 

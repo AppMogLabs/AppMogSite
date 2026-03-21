@@ -16,7 +16,6 @@ beforeEach(() => {
 const validSlugs = [
   'contractscan',
   'walletintel',
-  'soundsmart',
   'vestingwatch',
   'photo-blitz',
   'agentwatch',
