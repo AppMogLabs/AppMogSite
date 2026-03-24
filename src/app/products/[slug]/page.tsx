@@ -7,10 +7,26 @@ interface ProductPageProps {
   params: { slug: string };
 }
 
-const products = {
+interface Product {
+  name: string;
+  status: 'LIVE' | 'READY' | 'PENDING';
+  category: string;
+  headline: string;
+  description: string;
+  metaTitle: string;
+  metaDescription: string;
+  features: string[];
+  cta: string;
+  legalLinks?: {
+    privacy: string;
+    terms: string;
+  };
+}
+
+const products: Record<string, Product> = {
   contractscan: {
     name: 'ContractScan',
-    status: 'LIVE' as const,
+    status: 'LIVE',
     category: 'Web3',
     headline: "You Don't Read Solidity. ContractScan Does.",
     description: "ContractScan translates smart contracts into plain English. Paste an address, get a human-readable explanation of every function, every risk, every mechanic. No computer science degree required.",
@@ -27,7 +43,7 @@ const products = {
   },
   walletintel: {
     name: 'WalletIntel',
-    status: 'LIVE' as const,
+    status: 'LIVE',
     category: 'Web3',
     headline: 'Whales Move. You React. Or You Could Move First.',
     description: 'WalletIntel tracks Ethereum wallet activity in real-time. Follow smart money wallets, get alerts when they move, see token flows before price action. Stop following trends — front-run them.',
@@ -45,7 +61,7 @@ const products = {
   },
   vestingwatch: {
     name: 'VestingWatch',
-    status: 'LIVE' as const,
+    status: 'LIVE',
     category: 'Web3',
     headline: 'Token Unlocks = Dump Events. Unless You See Them Coming.',
     description: 'Track vesting schedules for 1000+ Ethereum tokens. See cliffs, linear unlocks, team allocations. Get alerts before the dump. Exit early or buy the dip — your choice.',
@@ -63,7 +79,7 @@ const products = {
   },
   'photo-blitz': {
     name: 'Photo Blitz: Cleanup',
-    status: 'LIVE' as const,
+    status: 'LIVE',
     category: 'Mobile',
     headline: 'Your Camera Roll Is a Warzone. Time to Fight Back.',
     description: 'PhotoBlitz turns photo cleanup into Space Invaders. Duplicates, screenshots, and blurry shots scroll down like alien ships. Tap to destroy. Score points. Clear space. Cleanup stopped being a chore.',
@@ -78,10 +94,14 @@ const products = {
       '100% on-device processing — zero cloud uploads',
     ],
     cta: 'https://apps.apple.com/app/photoblitz',
+    legalLinks: {
+      privacy: '/privacy/photo-blitz',
+      terms: '/terms/photo-blitz',
+    },
   },
   agentwatch: {
     name: 'AgentWatch',
-    status: 'READY' as const,
+    status: 'READY',
     category: 'AI Infrastructure',
     headline: 'Your Agents Are Running. Are They Working?',
     description: 'AgentWatch gives you real-time visibility into your AI agent swarm. Track performance, costs, uptime, and success rates. Optimize before budgets explode.',
@@ -99,7 +119,7 @@ const products = {
   },
   speaksmart: {
     name: 'SpeakSmart',
-    status: 'PENDING' as const,
+    status: 'PENDING',
     category: 'Productivity',
     headline: "Your Hands Are Full. Your Brain Isn't. Speak Instead.",
     description: 'SpeakSmart listens live. You speak commands, get instant actions. "Email John the report" — draft sent. "Remind me to review the PR at 3pm" — calendar event created. Never leave flow state again.',
@@ -114,11 +134,15 @@ const products = {
       'Cross-platform: web, macOS, Windows, Linux',
     ],
     cta: 'https://speaksmart.appmog.studio',
+    legalLinks: {
+      privacy: '/privacy/speaksmart',
+      terms: '/terms/speaksmart',
+    },
   },
 };
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
-  const product = products[params.slug as keyof typeof products];
+  const product = products[params.slug];
   if (!product) return {};
   return {
     title: product.metaTitle,
@@ -131,7 +155,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 }
 
 export default function ProductPage({ params }: ProductPageProps) {
-  const product = products[params.slug as keyof typeof products];
+  const product = products[params.slug];
 
   if (!product) {
     notFound();
@@ -184,7 +208,7 @@ export default function ProductPage({ params }: ProductPageProps) {
       </section>
 
       {/* CTA */}
-      <section className="px-6 lg:px-8 py-12 lg:py-20">
+      <section className={`px-6 lg:px-8 py-12 lg:py-20 ${product.legalLinks ? 'border-b border-border' : ''}`}>
         <a
           href={product.cta}
           target="_blank"
@@ -199,6 +223,22 @@ export default function ProductPage({ params }: ProductPageProps) {
           {product.status === 'LIVE' && <span>&rarr;</span>}
         </a>
       </section>
+
+      {/* Legal Links */}
+      {product.legalLinks && (
+        <section className="px-6 lg:px-8 py-8">
+          <h2 className="text-[0.7rem] uppercase tracking-[0.2em] text-white/40 mb-4">Legal</h2>
+          <div className="flex items-center gap-6">
+            <Link href={product.legalLinks.privacy} className="text-sm text-white/60 hover:text-accent transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="w-1 h-1 bg-white/20 rounded-full" />
+            <Link href={product.legalLinks.terms} className="text-sm text-white/60 hover:text-accent transition-colors">
+              Terms of Service
+            </Link>
+          </div>
+        </section>
+      )}
     </div>
   );
 }

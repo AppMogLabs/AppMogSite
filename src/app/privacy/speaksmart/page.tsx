@@ -17,7 +17,7 @@ export default function SpeakSmartPrivacy() {
             SpeakSmart Privacy Policy
           </h1>
           <div className="flex items-center gap-4 text-sm text-white/60">
-            <span>Effective Date: March 19, 2026</span>
+            <span>Effective Date: March 24, 2026</span>
             <span className="w-1 h-1 bg-accent rounded-full" />
             <span>Company: AppMog Ltd</span>
           </div>
@@ -28,73 +28,161 @@ export default function SpeakSmartPrivacy() {
           <section className="mb-12">
             <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Introduction</h2>
             <p className="text-white/70 leading-relaxed">
-              SpeakSmart is an AI-powered voice-to-text and writing assistant application developed by AppMog Ltd ("we", "our", or "us"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.
+              At SpeakSmart, we take your privacy seriously. This policy explains what data we collect, how we use it, and your rights. SpeakSmart is an AI-powered voice-to-text and writing assistant application developed by AppMog Ltd.
             </p>
           </section>
 
           <section className="mb-12">
-            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Information We Collect</h2>
-            
-            <h3 className="font-display text-[1.1rem] font-bold mb-3 text-white/90 mt-6">Information You Provide</h3>
-            <ul className="list-disc pl-6 text-white/70 space-y-2">
-              <li>Voice recordings and transcriptions</li>
-              <li>Text content you create or edit</li>
-              <li>Account information (if applicable)</li>
-              <li>Feedback and support communications</li>
-            </ul>
-
-            <h3 className="font-display text-[1.1rem] font-bold mb-3 text-white/90 mt-6">Automatically Collected Information</h3>
-            <ul className="list-disc pl-6 text-white/70 space-y-2">
-              <li>Device information and identifiers</li>
-              <li>Usage patterns and analytics</li>
-              <li>App performance metrics</li>
-            </ul>
-
-            <h3 className="font-display text-[1.1rem] font-bold mb-3 text-white/90 mt-6">Audio Processing</h3>
-            <p className="text-white/70 leading-relaxed">
-              Voice recordings are processed to provide transcription and AI writing assistance. Audio is processed locally on device where possible. Some processing may occur on servers belonging to an AI service provider whose API you connected.
-            </p>
-          </section>
-
-          <section className="mb-12">
-            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">How We Use Your Information</h2>
+            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Data Collection</h2>
             <p className="text-white/70 leading-relaxed mb-4">
-              We use your information to:
+              SpeakSmart collects the following data to provide transcription and AI-powered text enhancement:
             </p>
             <ul className="list-disc pl-6 text-white/70 space-y-2">
-              <li>Provide accurate speech-to-text transcription</li>
-              <li>Generate AI-powered writing assistance</li>
-              <li>Improve our AI models (with your consent)</li>
-              <li>Provide customer support</li>
-              <li>Analyze app usage to improve features</li>
+              <li><strong>Voice recordings:</strong> Audio files you record within the app for transcription</li>
+              <li><strong>Transcribed text:</strong> The text generated from your voice recordings</li>
+              <li><strong>User preferences and settings:</strong> Your app configuration, including language preferences and feature toggles</li>
+            </ul>
+            <p className="text-white/70 leading-relaxed mt-4">
+              <strong>Data We Do Not Collect:</strong> We do not collect your personal information, identity, location, or any data beyond what&apos;s listed above. Your OpenAI API key is stored securely in iOS Keychain and never transmitted to our servers.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Data Processing Methods</h2>
+            <p className="text-white/70 leading-relaxed mb-4">
+              SpeakSmart uses a dual-mode processing system to protect your privacy:
+            </p>
+            
+            <h3 className="font-display text-[1.1rem] font-bold mb-3 text-white/90 mt-6">Primary Method: On-Device Processing (Apple Intelligence)</h3>
+            <ul className="list-disc pl-6 text-white/70 space-y-2">
+              <li>Devices with Apple Intelligence process all voice data locally on your device</li>
+              <li>No data leaves your iPhone or iPad</li>
+              <li>No internet connection required for transcription</li>
+              <li>Full privacy protection—Apple Intelligence privacy policy applies</li>
+            </ul>
+
+            <h3 className="font-display text-[1.1rem] font-bold mb-3 text-white/90 mt-6">Fallback Method: OpenAI API (Optional, User-Configured)</h3>
+            <ul className="list-disc pl-6 text-white/70 space-y-2">
+              <li>Used only on devices without Apple Intelligence capabilities</li>
+              <li>Requires you to provide your own OpenAI API key</li>
+              <li>Voice recordings and transcribed text are sent to OpenAI&apos;s servers only when you explicitly use this feature</li>
+              <li>Processing is subject to OpenAI&apos;s privacy policy and your OpenAI account settings</li>
             </ul>
           </section>
 
           <section className="mb-12">
-            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Data Sharing and Storage</h2>
+            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Data Stored on Your Device</h2>
+            <p className="text-white/70 leading-relaxed mb-4">
+              All your data is stored locally on your iPhone or iPad:
+            </p>
             <ul className="list-disc pl-6 text-white/70 space-y-2">
-              <li>Voice recordings are not stored permanently unless you choose to save them</li>
-              <li>We do not sell your personal data or voice recordings</li>
-              <li>Data is only shared with service providers necessary for service delivery</li>
+              <li>Recording history</li>
+              <li>Transcriptions</li>
+              <li>Rewritten text</li>
+              <li>Your OpenAI API key (encrypted in iOS Keychain)</li>
+              <li>App preferences</li>
+            </ul>
+            <p className="text-white/70 leading-relaxed mt-4">
+              This data never leaves your device unless you explicitly share it or enable OpenAI processing.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Third-Party Services</h2>
+            <p className="text-white/70 leading-relaxed mb-4">
+              SpeakSmart uses the following external services:
+            </p>
+            
+            <h3 className="font-display text-[1.1rem] font-bold mb-3 text-white/90 mt-6">Apple Speech Recognition</h3>
+            <ul className="list-disc pl-6 text-white/70 space-y-2">
+              <li>Used to transcribe your voice to text on Apple Intelligence-enabled devices</li>
+              <li>Audio processing occurs on-device; no data is sent to Apple&apos;s servers</li>
+              <li>Subject to <a href="https://www.apple.com/legal/privacy/" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">Apple&apos;s Privacy Policy</a></li>
+            </ul>
+
+            <h3 className="font-display text-[1.1rem] font-bold mb-3 text-white/90 mt-6">OpenAI API (Optional, User-Configured)</h3>
+            <ul className="list-disc pl-6 text-white/70 space-y-2">
+              <li><strong>What data is shared:</strong> Voice recordings and transcribed text</li>
+              <li><strong>When it&apos;s shared:</strong> Only when you explicitly provide your own OpenAI API key and use OpenAI-powered features</li>
+              <li><strong>Purpose:</strong> AI-powered text enhancement and rewriting</li>
+              <li><strong>User control:</strong> You maintain full control by providing your own API key. You can disable OpenAI processing at any time by removing your API key from the app settings</li>
+              <li><strong>Data protection:</strong> Processing is subject to <a href="https://openai.com/privacy" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">OpenAI&apos;s Privacy Policy</a> and <a href="https://openai.com/security" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">OpenAI&apos;s Data Protection Standards</a></li>
+              <li><strong>SpeakSmart&apos;s role:</strong> SpeakSmart does not store, log, or retain copies of data sent to OpenAI. Your data goes directly from the app to OpenAI&apos;s servers using your API key</li>
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Data Retention</h2>
+            <p className="text-white/70 leading-relaxed mb-4">
+              How long we keep your data depends on where it&apos;s processed:
+            </p>
+            
+            <h3 className="font-display text-[1.1rem] font-bold mb-3 text-white/90 mt-6">On-Device Data</h3>
+            <ul className="list-disc pl-6 text-white/70 space-y-2">
+              <li>All locally stored data (recordings, transcriptions, preferences) remains on your device indefinitely</li>
+              <li>You control retention by deleting individual items or clearing your history within the app</li>
+              <li>Uninstalling SpeakSmart permanently deletes all local data</li>
+            </ul>
+
+            <h3 className="font-display text-[1.1rem] font-bold mb-3 text-white/90 mt-6">OpenAI-Processed Data</h3>
+            <ul className="list-disc pl-6 text-white/70 space-y-2">
+              <li>Data retention is subject to your OpenAI account settings and <a href="https://openai.com/privacy" className="text-accent hover:underline" target="_blank" rel="noopener noreferrer">OpenAI&apos;s Privacy Policy</a></li>
+              <li>SpeakSmart does not retain copies of data sent to OpenAI</li>
+              <li>For questions about OpenAI&apos;s data retention, contact OpenAI directly</li>
+            </ul>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Optional Analytics</h2>
+            <p className="text-white/70 leading-relaxed mb-4">
+              If you opt in (entirely optional), we collect anonymous usage data to improve the app:
+            </p>
+            <ul className="list-disc pl-6 text-white/70 space-y-2">
+              <li>Which features are used most</li>
+              <li>App performance metrics</li>
+              <li>Crash reports</li>
+            </ul>
+            <p className="text-white/70 leading-relaxed mt-4">
+              This data contains no personal information and cannot identify you. You can change this preference anytime in Settings.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Data Security</h2>
+            <p className="text-white/70 leading-relaxed mb-4">
+              Your data is protected by:
+            </p>
+            <ul className="list-disc pl-6 text-white/70 space-y-2">
+              <li>iOS built-in encryption</li>
+              <li>Keychain storage for sensitive data (API key)</li>
+              <li>No cloud storage or sync (by default)</li>
             </ul>
           </section>
 
           <section className="mb-12">
             <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Your Rights</h2>
             <p className="text-white/70 leading-relaxed mb-4">
-              You may:
+              You have complete control over your data:
             </p>
             <ul className="list-disc pl-6 text-white/70 space-y-2">
-              <li>Delete your saved recordings and documents</li>
-              <li>Request deletion of your account and associated data</li>
-              <li>Opt out of data collection for AI training</li>
+              <li><strong>Access:</strong> All your data is visible in the app</li>
+              <li><strong>Deletion:</strong> Delete individual recordings or clear all history</li>
+              <li><strong>Export:</strong> Share any recording to another app</li>
+              <li><strong>Removal:</strong> Uninstalling the app deletes all local data</li>
             </ul>
           </section>
 
           <section className="mb-12">
-            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Children's Privacy</h2>
+            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Children&apos;s Privacy</h2>
             <p className="text-white/70 leading-relaxed">
               SpeakSmart is not intended for children under 13. We do not knowingly collect data from children under 13.
+            </p>
+          </section>
+
+          <section className="mb-12">
+            <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Changes to This Policy</h2>
+            <p className="text-white/70 leading-relaxed">
+              We may update this privacy policy from time to time. Changes will be posted on this page with an updated date.
             </p>
           </section>
 
@@ -102,14 +190,14 @@ export default function SpeakSmartPrivacy() {
             <h2 className="font-display text-[1.5rem] font-bold mb-4 text-white">Contact Us</h2>
             <div className="bg-white/5 border border-white/10 rounded-lg p-6">
               <p className="font-display font-bold text-white mb-2">AppMog Ltd</p>
-              <p className="text-white/70">Email: <a href="mailto:legal@appmog.app" className="text-accent hover:underline">legal@appmog.app</a></p>
+              <p className="text-white/70">Email: <a href="mailto:privacy@appmog.com" className="text-accent hover:underline">privacy@appmog.com</a></p>
             </div>
           </section>
         </div>
 
         {/* Footer */}
         <footer className="border-t border-white/10 pt-8 mt-12">
-          <p className="text-sm text-white/40">Last updated: March 19, 2026</p>
+          <p className="text-sm text-white/40">Last updated: March 24, 2026</p>
         </footer>
       </article>
     </div>
